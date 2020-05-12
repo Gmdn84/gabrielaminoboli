@@ -23,19 +23,19 @@ body{
   }
 
 header {
-    height: 100vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.menu{
+.menu {
     background-color: white;
     position: fixed;
     top: 0;
     width: 100vw;
-}
+  }
 
 .menu ul{
     display: flex;
@@ -68,9 +68,29 @@ a:hover{
   font-weight: lighter;
   text-align: center;
   font-size: 2em;
+  text-decoration: none;
+}
+
+h2{
+    color: teal;
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
+
+.port{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    color:silver;
 }
 
 .img-portfolio {
-    height: 180px;
-    width: 180px;
-  }
+    height: 100px;
+    width: 100px;
+    justify-content: space-between;
+    box-shadow: 3px 3px 2px gray;
+}
+
+figcaption:hover{
+    text-decoration: underline;
+}
