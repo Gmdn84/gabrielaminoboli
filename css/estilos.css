@@ -8,14 +8,14 @@ body{
     background-color: rgb(44,62,80);
     background-size: auto 100vh;
     height: 100vh;
-}
-
-@media (min-width: 400px) {
+    font-family: 'Roboto', sans-serif;
+  }
+  @media (min-width: 400px) {
     body {
       font-size: 18px;
     }
   }
-  
+
   @media (min-width: 600px) {
     body {
       font-size: 22px;
@@ -23,11 +23,12 @@ body{
   }
 
 header {
-    height: 50vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    background-image: url(../img/Orion.jpg);
 }
 
 .menu {
@@ -35,7 +36,7 @@ header {
     position: fixed;
     top: 0;
     width: 100vw;
-  }
+}
 
 .menu ul{
     display: flex;
@@ -52,14 +53,27 @@ header {
     display: block;
     padding: 10px;
 }
+.menu a:hover{
+  background-color: teal;
+  color:whitesmoke
+}
 
-a:hover{
-    text-decoration: underline;
+a {
+    text-decoration: none;
+    color: silver;
+}
+
+h2 a{
+  color: teal;
 }
 
 .site-title{
     color:whitesmoke;
     text-align: center;
+    font-size: 3em;
+    line-height: 1em;
+    margin-bottom: 20px;
+    font-family:'Josefin Sans', sans-serif;
 }
 
 .site-subtitle{
@@ -68,29 +82,111 @@ a:hover{
   font-weight: lighter;
   text-align: center;
   font-size: 2em;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
-h2{
-    color: teal;
-    text-decoration: underline;
-    padding-bottom: 20px;
+
+.portfolio{
+  background-color:  rgb(44,62,80) ;
 }
 
-.port{
-    display: flex;
-    justify-content: space-between;
-    padding:10px;
-    color:silver;
+.portfolio h2{
+  font-family: 'Roboto', sans-serif;
+  background-color: whitesmoke;
+  margin-bottom: 1em;
+  margin-top: -1em;
+  width:100vw;
+  text-indent: 2em;
 }
 
-.img-portfolio {
-    height: 100px;
-    width: 100px;
-    justify-content: space-between;
-    box-shadow: 3px 3px 2px gray;
+.port {
+    color: silver;
+    display: grid;
+    gap: 1em;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1em;
+    
+  }
+
+  @media (min-width: 400px) {
+    .portfolio {
+      padding: 3em 2em 2em;
+      height: 100vh;
+    }
+  
+    .port {
+      grid-template-columns: 200px 200px;
+      height: calc(100vh - 4.5em - 75px);
+    }
+  }
+  
+  @media (min-width: 940px) {
+    .portfolio {
+      padding: 2em;
+    }
+    
+   .grid {
+    grid-template-columns: repeat(4, 200px);
+    height: calc(100vh - 8em - 75px);
+  }
 }
 
-figcaption:hover{
-    text-decoration: underline;
+ .img-portfolio {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}  
+  
+.img-portfolio:hover{
+    transform: scale(1.1);
+}
+
+figcaption{
+    color: silver;
+}
+
+.sobreeu{
+  background-color: rgb(44,62,80);
+}
+
+.sobreeu h2{
+  font-family: 'Roboto', sans-serif;
+  background-color: whitesmoke;
+  margin-top: 1em;
+  margin-bottom: 10px;
+  width:100%;
+  text-indent: 2em;
+}
+
+p{
+  color:silver;
+  font-family:'Josefin Sans', sans-serif;
+  margin-left: 2em;
+  margin-right: 2em;
+  text-align: justify;
+  text-indent: 1.5em;
+}
+.cont h2{
+  background-color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0.5em;
+  width:100%;
+  text-indent: 2em;
+}
+
+.cont{
+  background-color: rgb(44,62,80);
+  display: flexbox;
+}
+.redes-sociais{
+  align-content: center;
+  background-color: grey;  
+  width: 50px;
+  height: 50px;
+  margin-left: 2em;
+  padding:5px;
+  
+  
 }
